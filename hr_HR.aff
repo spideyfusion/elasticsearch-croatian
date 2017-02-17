@@ -1,0 +1,906 @@
+SET UTF-8
+
+TRY abcčćdđefghijklmnoprsštuvzžqwxyABCČĆDĐEFGHIJKLMNOPRSŠTUVQWXY-
+
+ICONV 33
+ICONV ȁ a
+ICONV â a
+ICONV à a
+ICONV á a
+ICONV ā a
+ICONV ȅ e
+ICONV ȇ e
+ICONV è e
+ICONV é e
+ICONV ē e
+ICONV ȉ i
+ICONV î i
+ICONV ì i
+ICONV í i
+ICONV ī i
+ICONV ȍ o
+ICONV ô o
+ICONV ò o
+ICONV ó o
+ICONV ō o
+ICONV ȕ u
+ICONV û u
+ICONV ù u
+ICONV ú u
+ICONV ū u
+ICONV ȑ r
+ICONV ȓ r
+ICONV ŕ r
+ICONV č c
+ICONV ć c
+ICONV đ d
+ICONV š s
+ICONV ž z
+
+FLAG long
+
+NEEDAFFIX ZZ	
+CIRCUMFIX ZY	
+KEEPCASE ZX	
+ONLYINCOMPOUND ZW	
+COMPOUNDFLAG ZV	
+COMPOUNDBEGIN ZU	
+COMPOUNDMIDDLE ZT	
+COMPOUNDEND ZS	
+COMPOUNDPERMITFLAG ZR	
+COMPOUNDFORBIDFLAG ZQ	
+
+NOSUGGEST ZP	
+SUBSTANDARD ZO	
+
+FORBIDDENWORD ZN	
+WARN ZM	
+
+BREAK 2
+BREAK ^-
+BREAK -$
+
+WORDCHARS -0123456789
+
+COMPOUNDMIN 1
+COMPOUNDRULE 7
+COMPOUNDRULE (YB)(YE)	
+COMPOUNDRULE (YD)(YF)	
+COMPOUNDRULE (YA)*(YC)(YD)(YE)	
+COMPOUNDRULE (YA)*(YG)(YD)(YF)	
+COMPOUNDRULE (YA)*(YB)(YE)	
+COMPOUNDRULE (YH)(YJ)(YK)	
+COMPOUNDRULE (YI)(YJ)(YL)	
+
+REP 99
+REP x ks
+REP xy ksi
+REP dk tk
+REP tc dc
+REP c k
+REP c ds
+REP c ts
+REP č ć
+REP ć č
+REP đ dž
+REP dž đ
+REP dž č
+REP e ije
+REP je ije
+REP ije je
+REP iju i
+REP i je
+REP ia ija
+REP is ijs
+REP zš š
+REP zč šč
+REP zc sc
+REP zk sk
+REP zi$ gi
+REP ci$ ki
+REP ki$ ci
+REP bč pč
+REP gi zi
+REP bs ps
+REP dk tk
+REP pt bd
+REP sd zd
+REP tš dš
+REP st tst
+REP ts ds
+REP ^čiž čiz
+REP žc šc
+REP št š
+REP st s
+REP sč šč
+REP sk stk
+REP vn mn
+REP nc ns
+REP mlj mnj
+REP mnj mlj
+REP nis nijs
+REP zp sp
+REP j dž
+REP jel je_li
+REP jeli je_li
+REP ljnj nj
+REP lj nj
+REP kno ktno
+REP vši ći
+REP ći vši
+REP skuj šć
+REP kdž gdž
+REP ini inu
+REP rni rnu
+REP vežen vezen
+REP nešen nesen
+REP dreti$ derati
+REP natn nantn
+REP najs naes
+REP bčanci$ pčanki
+REP ^pretč predč
+REP ^prenat prednat
+REP avaon ovaonic
+REP on onic
+REP dvgn dvagn
+REP arn arnic
+REP vaoc$ valac
+REP ioc$ ilac
+REP ^poveč več
+REP aću$ at_ću
+REP aćeš$ at_ćeš
+REP aće$ at_će
+REP aćemo$ at_ćemo
+REP aćete$ at_ćete
+REP iću$ it_ću
+REP ićeš$ it_ćeš
+REP iće$ it_će
+REP ićemo$ it_ćemo
+REP ićete$ it_ćete
+REP šću$ st_ću
+REP šćeš$ st_ćeš
+REP šće$ st_će
+REP šćemo$ st_ćemo
+REP šćete$ st_ćete
+REP eću$ et_ću
+REP ećeš$ et_ćeš
+REP eće$ et_će
+REP ećemo$ et_ćemo
+REP ećete$ et_ćete
+REP nuću$ nut_ću
+REP nućeš$ nut_ćeš
+REP nuće$ nut_će
+REP nućemo$ nut_ćemo
+REP nućete$ nut_ćete
+
+
+
+
+AF 98
+AF ZZ	
+AF ZY	
+AF ZX	
+AF ZW	
+AF ZV	
+AF ZU	
+AF ZT	
+AF ZS	
+AF ZR	
+AF ZQ	
+AF ZP	
+AF ZO	
+AF ZN	
+AF ZM	
+AF YA	
+AF YB	
+AF YC	
+AF YD	
+AF YECHCJZPZZ	
+AF YFCICJZPZZ	
+AF YG	
+AF YH	
+AF YIZX	
+AF YJZW	
+AF YK	
+AF YL	
+AF YM	
+AF YN	
+AF YO	
+AF YP	
+AF YQ	
+AF YR	
+AF YS	
+AF YT	
+AF YU	
+AF YV	
+AF YW	
+AF YX	
+AF YY	
+AF YZ	
+AF YAYBYG	
+AF YAYBYC	
+AF YAYBYG	
+AF YAYDYG	
+AF XA	
+AF XC	
+AF XE	
+AF XG	
+AF XH	
+AF XI	
+AF XJ	
+AF XL	
+AF XM	
+AF XO	
+AF XP	
+AF XQ	
+AF XR	
+AF XS	
+AF XU	
+AF XV	
+AF XW	
+AF XX	
+AF XAXH	
+AF XAXI	
+AF XAXL	
+AF XAXM	
+AF XCXD	
+AF XCXE	
+AF XEXG	
+AF XHXI	
+AF XKXP	
+AF XPXW	
+AF XSXT	
+AF XTXW	
+AF XWXZ	
+AF XAXHXI	
+AF XAXHXJ	
+AF XAXHXL	
+AF XAXIXK	
+AF XAXIXL	
+AF XCXDXE	
+AF XCXEXG	
+AF XHXIXL	
+AF XAXHXIXJ	
+AF XAXHXIXL	
+AF XAXHXJXL	
+AF XAXIXKXL	
+AF XCXDXEXG	
+AF XAXHXIXJXL	
+AF XN	
+AF XPXZ	
+AF AAACZZ	
+AF ABADANAOBBBCBEBFBHBIBJBKBLBMZZ	
+AF BBBDBEBGBHBIBJZZ	
+AF CICJZZ	
+AF CLZZ	
+AF CKZZ	
+AF CMZZ	
+
+
+
+
+SFX AA Y 1
+SFX AA 0 0 .	Njd.m.r
+
+SFX AB Y 3
+SFX AB 0 a .	Gjd.m.r
+SFX AB 0 u .	Djd.m.r
+SFX AB 0 u .	Ljd.m.r
+
+SFX AC Y 1
+SFX AC 0 a .	Ajd.m.r
+
+SFX AD Y 1
+SFX AD 0 0 .	Ajd.m.r
+
+SFX AE Y 1
+SFX AE 0 e .	Vjd.m.r
+
+SFX AF Y 1
+SFX AF 0 u .	Vjd.m.r
+
+SFX AG Y 1
+SFX AG 0 om .	Ijd.m.r
+
+SFX AH Y 1
+SFX AH O em .	Ijd.m.r
+
+SFX AI Y 2
+SFX AI 0 i . Nmn.m.r
+SFX AI 0 i . Vmn.m.r
+
+SFX AJ Y 3
+SFX AJ 0 ima .	Dmn.m.r
+SFX AJ 0 ima .	Lmn.m.r
+SFX AJ 0 ima .	Imn.m.r
+
+SFX AK Y 1
+SFX AK 0 a .	Gmn.m.r
+
+SFX AL Y 1
+SFX AL 0 e .	Amn.m.r
+
+SFX AM Y 1
+SFX AM 0 0 .	Njd.s.r
+
+SFX AN Y 1
+SFX AN 0 o .	Njd.s.r
+
+SFX AO Y 5
+SFX AO 0 a .	Gjd.s.r
+SFX AO 0 u .	Djd.s.r
+SFX AO 0 o .	Ajd.s.r
+SFX AO 0 o .	Vjd.s.r
+SFX AO 0 u .	Ljd.s.r
+
+SFX AP Y 7
+SFX AP 0 a .	Nmn.s.r
+SFX AP 0 a .	Gmn.s.r
+SFX AP 0 ima .	Dmn.s.r
+SFX AP 0 a .	Amn.s.r
+SFX AP 0 a .	Vmn.s.r
+SFX AP 0 ima .	Lmn.s.r
+SFX AP 0 ima .	Imn.s.r
+
+SFX AQ Y 6
+SFX AQ 0 e .	Njd.s.r
+SFX AQ 0 a .	Gjd.s.r
+SFX AQ 0 u .	Djd.s.r
+SFX AQ 0 e .	Ajd.s.r
+SFX AQ 0 e .	Vjd.s.r
+SFX AQ 0 u .	Ljd.s.r
+
+SFX AR Y 1
+SFX AR 0 em .	Ijd.s.r
+
+SFX AS Y 1
+SFX AS 0 om .	Ijd.s.r
+
+SFX AT Y 7
+SFX AT 0 a .	Nmn.s.r
+SFX AT 0 a .	Gmn.s.r
+SFX AT 0 ima .	Dmn.s.r
+SFX AT 0 a .	Amn.s.r
+SFX AT 0 a .	Vmn.s.r
+SFX AT 0 ima .	Lmn.s.r
+SFX AT 0 ima .	Imn.s.r
+
+SFX AU Y 5
+SFX AU 0 a .	Njd.ž.r
+SFX AU 0 e .	Gjd.ž.r
+SFX AU 0 u .	Ajd.ž.r
+SFX AU 0 o .	Vjd.ž.r
+SFX AU 0 om .	Ijd.ž.r
+
+SFX AV Y 2
+SFX AV 0 i .	Djd.ž.r
+SFX AV 0 i .	Ljd.ž.r
+
+SFX AW Y 6
+SFX AW 0 e .	Nmn.ž.r
+SFX AW 0 ama .	Dmn.ž.r
+SFX AW 0 e .	Amn.ž.r
+SFX AW 0 e .	Vmn.ž.r
+SFX AW 0 ama .	Lmn.ž.r
+SFX AW 0 ama .	Imn.ž.r
+
+SFX AX Y 1
+SFX AX 0 a .	Gmn.ž.r
+
+SFX AY Y 10
+SFX AY 0 0 .	Njd.ž.r
+SFX AY 0 i .	Gjd.ž.r
+SFX AY 0 i .	Djd.ž.r
+SFX AY 0 0 .	Ajd.ž.r
+SFX AY 0 i .	Vjd.ž.r
+SFX AY 0 i .	Ljd.ž.r
+SFX AY 0 i .	Ijd.ž.r
+SFX AY 0 lju v	Ijd.ž.r
+SFX AY 0 ju l	Ijd.ž.r
+SFX AY st šću st	Ijd.ž.r
+
+SFX AZ Y 7
+SFX AZ 0 i .	Nmn.ž.r
+SFX AZ 0 i .	Gmn.ž.r
+SFX AZ 0 ima .	Dmn.ž.r
+SFX AZ 0 i .	Amn.ž.r
+SFX AZ 0 i .	Vmn.ž.r
+SFX AZ 0 ima .	Lmn.ž.r
+SFX AZ 0 ima .	Imn.ž.r
+
+SFX BA Y 1
+SFX BA 0 0 .	Njd.m.r
+
+SFX BB Y 1
+SFX BB 0 i . Njd.m.r
+
+SFX BC Y 13
+SFX BC 0 og .	Gjd.m.r
+SFX BC 0 oga .	Gjd.m.r
+SFX BC 0 om .	Djd.m.r
+SFX BC 0 ome .	Djd.m.r
+SFX BC 0 omu .	Djd.m.r 
+SFX BC 0 og .	Ajd.m.r
+SFX BC 0 oga .	Ajd.m.r
+SFX BC 0 i .	Ajd.m.r
+SFX BC 0 i .	Vjd.m.r
+SFX BC 0 om .	Ljd.m.r
+SFX BC 0 ome .	Ljd.m.r
+SFX BC 0 omu .	Ljd.m.r
+SFX BC 0 im .	Ijd.m.r
+
+SFX BD Y 11
+SFX BD 0 eg .	Gjd.m.r
+SFX BD 0 ega .	Gjd.m.r
+SFX BD 0 em .	Djd.m.r
+SFX BD 0 emu .	Djd.m.r 
+SFX BD 0 eg .	Ajd.m.r
+SFX BD 0 ega .	Ajd.m.r
+SFX BD 0 i .	Ajd.m.r
+SFX BD 0 i .	Vjd.m.r
+SFX BD 0 em .	Ljd.m.r
+SFX BD 0 emu .	Ljd.m.r
+SFX BD 0 im .	Ijd.m.r
+
+SFX BE Y 10
+SFX BE 0 i .	Njd.m.r
+SFX BE 0 ih .	Gjd.m.r
+SFX BE 0 im .	Djd.m.r
+SFX BE 0 ima .	Djd.m.r
+SFX BE 0 e .	Ajd.m.r
+SFX BE 0 i .	Vjd.m.r
+SFX BE 0 im .	Ljd.m.r
+SFX BE 0 ima .	Ljd.m.r
+SFX BE 0 im .	Ijd.m.r
+SFX BE 0 ima .	Ijd.m.r
+
+SFX BF Y 12
+SFX BF 0 o .	Njd.s.r
+SFX BF 0 og .	Gjd.s.r
+SFX BF 0 oga .	Gjd.s.r
+SFX BF 0 om .	Djd.s.r
+SFX BF 0 ome .	Djd.s.r
+SFX BF 0 omu .	Djd.s.r
+SFX BF 0 o .	Ajd.s.r
+SFX BF 0 o .	Vjd.s.r
+SFX BF 0 om .	Ljd.s.r
+SFX BF 0 ome .	Ljd.s.r
+SFX BF 0 omu .	Ljd.s.r
+SFX BF 0 im .	Ijd.s.r
+
+SFX BG Y 10
+SFX BG 0 e .	Njd.s.r
+SFX BG 0 eg .	Gjd.s.r
+SFX BG 0 ega .	Gjd.s.r
+SFX BG 0 em .	Djd.s.r
+SFX BG 0 emu .	Djd.s.r
+SFX BG 0 e .	Ajd.s.r
+SFX BG 0 e .	Vjd.s.r
+SFX BG 0 em .	Ljd.s.r
+SFX BG 0 emu .	Ljd.s.r
+SFX BG 0 im .	Ijd.s.r
+
+SFX BH Y 10
+SFX BH 0 a .	Nmn.s.r
+SFX BH 0 ih .	Gmn.s.r
+SFX BH 0 im .	Dmn.s.r
+SFX BH 0 ima .	Dmn.s.r
+SFX BH 0 a .	Amn.s.r
+SFX BH 0 a .	Vmn.s.r
+SFX BH 0 im .	Lmn.s.r
+SFX BH 0 ima .	Lmn.s.r
+SFX BH 0 im .	Imn.s.r
+SFX BH 0 ima .	Imn.s.r
+
+SFX BI Y 7
+SFX BI 0 a .	Njd.ž.r
+SFX BI 0 e .	Gjd.ž.r
+SFX BI 0 oj .	Djd.ž.r
+SFX BI 0 u .	Ajd.ž.r
+SFX BI 0 a .	Vjd.ž.r
+SFX BI 0 oj .	Ljd.ž.r
+SFX BI 0 om .	Ijd.ž.r
+
+SFX BJ Y 10
+SFX BJ 0 e .	Nmn.ž.r
+SFX BJ 0 ih .	Gmn.ž.r
+SFX BJ 0 im .	Dmn.ž.r
+SFX BJ 0 ima .	Dmn.ž.r
+SFX BJ 0 e .	Amn.ž.r
+SFX BJ 0 e .	Vmn.ž.r
+SFX BJ 0 im .	Lmn.ž.r
+SFX BJ 0 ima .	Lmn.ž.r
+SFX BJ 0 im .	Imn.ž.r
+SFX BJ 0 ima .	Imn.ž.r
+
+SFX BK Y 1
+SFX BK 0 i .	Vjd.m.r
+
+SFX BL Y 1
+SFX BL 0 im .	Ijd.m.r
+
+SFX BM Y 1
+SFX BM 0 im .	Ijd.s.r
+
+SFX BN Y 2
+SFX BN 0 0 ti	po:glagol infinitiv
+SFX BN i 0 ti	po:glagol infinitiv_krnji
+
+SFX BO Y 6
+SFX BO 0 im .	1.l.jd-prezent
+SFX BO 0 iš .	2.l.jd-prezent
+SFX BO 0 i .	3.l.jd-prezent
+SFX BO 0 imo .	1.l.mn-prezent
+SFX BO 0 ite .	2.l.mn-prezent
+SFX BO 0 e .	3.l.mn-prezent
+
+SFX BP Y 5
+SFX BP 0 em .	1.l.jd-prezent
+SFX BP 0 eš .	2.l.jd-prezent
+SFX BP 0 e .	3.l.jd-prezent
+SFX BP 0 emo .	1.l.mn-prezent
+SFX BP 0 ete .	2.l.mn-prezent
+
+SFX BQ Y 5
+SFX BQ 0 am .	1.l.jd-prezent
+SFX BQ 0 aš .	2.l.jd-prezent
+SFX BQ 0 a .	3.l.jd-prezent
+SFX BQ 0 amo .	1.l.mn-prezent
+SFX BQ 0 ate .	2.l.mn-prezent
+
+SFX BR Y 1
+SFX BR 0 u .	3.l.mn
+
+SFX BS Y 6
+SFX BS 0 o .	jd.m.r	po:pridjev_glagolski
+SFX BS 0 la .	jd.ž.r	po:pridjev_glagolski
+SFX BS 0 lo .	jd.s.r	po:pridjev_glagolski
+SFX BS 0 li .	mn.m.r	po:pridjev_glagolski
+SFX BS 0 le .	mn.ž.r	po:pridjev_glagolski
+SFX BS 0 la .	mn.s.r	po:pridjev_glagolski
+
+SFX BT Y 6
+SFX BT 0 n .	jd.m.r	po:pridjev_glagolski
+SFX BT 0 na .	jd.ž.r	po:pridjev_glagolski
+SFX BT 0 no .	jd.s.r	po:pridjev_glagolski
+SFX BT 0 ni .	mn.m.r	po:pridjev_glagolski
+SFX BT 0 ne .	mn.ž.r	po:pridjev_glagolski
+SFX BT 0 na .	mn.s.r	po:pridjev_glagolski
+
+SFX BU Y 6
+SFX BU 0 t .	jd.m.r	po:pridjev_glagolski
+SFX BU 0 ta .	jd.ž.r	po:pridjev_glagolski
+SFX BU 0 to .	jd.s.r	po:pridjev_glagolski
+SFX BU 0 ti .	mn.m.r	po:pridjev_glagolski
+SFX BU 0 te .	mn.ž.r	po:pridjev_glagolski
+SFX BU 0 ta .	mn.s.r	po:pridjev_glagolski
+
+SFX BV Y 1
+SFX BV 0 ši .	po:prilog_prošli
+
+SFX BW Y 1
+SFX BW 0 ći .	po:prilog_sadašnji
+
+SFX BX Y 3
+SFX BX 0 j .	1.l.jd-imperativ
+SFX BX 0 jmo .	2.l.mn-imperativ
+SFX BX 0 jte .	3.l.mn-imperativ
+
+SFX BY Y 3
+SFX BY 0 i .	1.l.jd-imperativ
+SFX BY 0 imo .	2.l.mn-imperativ
+SFX BY 0 ite .	3.l.mn-imperativ
+
+SFX BZ Y 6
+SFX BZ 0 ah .	1.l.jd-imperfekt
+SFX BZ 0 aše .	2.l.jd-imperfekt
+SFX BZ 0 aše .	3.l.jd-imperfekt
+SFX BZ 0 asmo .	1.l.mn-imperfekt
+SFX BZ aste .	2.l.mn-imperfekt
+SFX BZ ahu .	3.l.mn-imperfekt
+
+SFX CA Y 6
+SFX CA 0 h .	1.l.jd-aorist
+SFX CA 0 0 .	2.l.jd-aorist
+SFX CA 0 0 .	3.l.jd-aorist
+SFX CA 0 smo .	1.l.mn-aorist
+SFX CA 0 ste .	2.l.mn-aorist
+SFX CA 0 še .	3.l.mn-aorist
+
+SFX CB Y 4
+SFX CB 0 oh .	1.l.jd-aorist
+SFX CB 0 osmo .	1.l.mn-aorist
+SFX CB 0 oste .	2.l.mn-aorist
+SFX CB 0 oše .	3.l.mn-aorist
+
+SFX CC Y 2
+SFX CC 0 e .	2.l.jd-aorist
+SFX CC 0 e .	3.l.jd-aorist
+
+SFX CD Y 1
+SFX CD 0 ši .	po:prilog_prošli
+
+SFX CE Y 1
+SFX CE 0 ći .	po:prilog_sadašnji
+
+
+SFX XA Y 13
+SFX XA 0 a [^aeiou]
+SFX XA 0 u [^aeiou]
+SFX XA 0 e [^aeiou]
+SFX XA 0 om [^aeiou]
+SFX XA a e a
+SFX XA a i a
+SFX XA a om a
+SFX XA o a o
+SFX XA o u o
+SFX XA o om o
+SFX XA e a e
+SFX XA e u e
+SFX XA e em e
+
+SFX XB Y 5
+SFX XB ti m ti
+SFX XB ti š ti
+SFX XB ti mo ti
+SFX XB ti te ti
+SFX XB ti u ti
+
+SFX XC Y 4
+SFX XC ti h ti
+SFX XC ti smo ti
+SFX XC ti ste ti
+SFX XC ti še ti
+
+SFX XD Y 5
+SFX XD ti h ti
+SFX XD ti še ti
+SFX XD ti smo ti
+SFX XD ti ste ti
+SFX XD ti hu ti
+
+SFX XE Y 3
+SFX XE ti o ti
+SFX XE ti li ti
+SFX XE ti la ti
+
+SFX XF Y 5
+SFX XF ti h ti
+SFX XF ti še ti
+SFX XF ti smo ti
+SFX XF ti ste ti
+SFX XF iti hu ti
+
+SFX XG Y 5
+SFX XG ti m ti
+SFX XG ti š ti
+SFX XG ti mo ti
+SFX XG ti te ti
+SFX XG iti e iti
+
+SFX XH Y 6
+SFX XH 0 a .
+SFX XH 0 u .
+SFX XH 0 i .
+SFX XH 0 ih .
+SFX XH 0 im .
+SFX XH 0 e .
+
+SFX XI Y 6
+SFX XI 0 a .
+SFX XI 0 u .
+SFX XI 0 i .
+SFX XI 0 ih .
+SFX XI 0 ima .
+SFX XI 0 e .
+
+SFX XJ Y 6
+SFX XJ 0 a .
+SFX XJ 0 u .
+SFX XJ 0 i .
+SFX XJ 0 ih .
+SFX XJ 0 im .
+SFX XJ 0 o .
+
+SFX XK Y 6
+SFX XK 0 a .
+SFX XK 0 u .
+SFX XK 0 i .
+SFX XK 0 ih .
+SFX XK 0 ima .
+SFX XK 0 o .
+
+SFX XL Y 2
+SFX XL 0 oj .
+SFX XL 0 om .
+
+SFX XM Y 4
+SFX XM a e a
+SFX XM a i a
+SFX XM a o a
+SFX XM a u a
+
+SFX XN Y 3
+SFX XN 0 a og
+SFX XN 0 u om
+SFX XN 0 e om
+
+SFX XO Y 26
+SFX XO i og/90 ni
+SFX XO i om/90 ni
+SFX XO i o ni
+SFX XO i im ni
+SFX XO i a ni
+SFX XO i e ni
+SFX XO i oj ni
+SFX XO 0 h ni
+SFX XO i u ni
+SFX XO i og/90 nji
+SFX XO i om/90 nji
+SFX XO i im nji
+SFX XO i a nji
+SFX XO i e nji
+SFX XO i oj nji
+SFX XO 0 h nji
+SFX XO i u nji
+SFX XO i og/90 li
+SFX XO i om/90 li
+SFX XO i o li
+SFX XO i im li
+SFX XO i a li
+SFX XO i e li
+SFX XO i oj li
+SFX XO 0 h li
+SFX XO i u li
+
+SFX XP Y 5
+SFX XP 0 a .
+SFX XP 0 u .
+SFX XP 0 om .
+SFX XP 0 i .
+SFX XP 0 ima .
+
+SFX XQ Y 30
+SFX XQ ijeti im ijeti
+SFX XQ ijeti iš ijeti
+SFX XQ ijeti i ijeti
+SFX XQ ijeti imo ijeti
+SFX XQ ijeti ite ijeti
+SFX XQ ijeti e ijeti
+SFX XQ iti im iti
+SFX XQ iti iš iti
+SFX XQ iti i iti
+SFX XQ iti imo iti
+SFX XQ iti ite iti
+SFX XQ iti e iti
+SFX XQ jeti im jeti
+SFX XQ jeti iš jeti
+SFX XQ jeti i jeti
+SFX XQ jeti imo jeti
+SFX XQ jeti ite jeti
+SFX XQ jeti e jeti
+SFX XQ zati žem zati
+SFX XQ zati žeš zati
+SFX XQ zati že zati
+SFX XQ zati žemo zati
+SFX XQ zati žete zati
+SFX XQ zati žu zati
+SFX XQ ati am [^z]ati
+SFX XQ ati aš [^z]ati
+SFX XQ ati a [^z]ati
+SFX XQ ati amo [^z]ati
+SFX XQ ati ate [^z]ati
+SFX XQ ati ju [^z]ati
+
+SFX XR Y 30
+SFX XR an ni an
+SFX XR an n/90 na
+SFX XR an nog an
+SFX XR an noga an
+SFX XR an nom an
+SFX XR an nome an
+SFX XR an nomu an
+SFX XR an nim an
+SFX XR an no an
+SFX XR an na an
+SFX XR an ne an
+SFX XR an noj an
+SFX XR an nih an
+SFX XR an nu an
+SFX XR an nom an
+SFX XR 0 i en
+SFX XR 0 0/90 en
+SFX XR 0 og en
+SFX XR 0 oga en
+SFX XR 0 om en
+SFX XR 0 ome en
+SFX XR 0 omu en
+SFX XR 0 im en
+SFX XR 0 o en
+SFX XR 0 a en
+SFX XR 0 e en
+SFX XR 0 oj en
+SFX XR 0 ih en
+SFX XR 0 u en
+SFX XR 0 om en
+
+SFX XS Y 4
+SFX XS 0 a .
+SFX XS 0 u .
+SFX XS 0 em [jčćđ]
+SFX XS 0 om [^jčćđ]
+
+SFX XT Y 3
+SFX XT 0 i .
+SFX XT 0 e .
+SFX XT 0 ima .
+
+SFX XU Y 5
+SFX XU a e a
+SFX XU a i a
+SFX XU a u a
+SFX XU a om a
+SFX XU 0 ama a
+
+SFX XV Y 3
+SFX XV 0 i st
+SFX XV 0 ima st
+SFX XV 0 st šću st
+
+SFX XW Y 12
+SFX XW 0 og .
+SFX XW 0 oga .
+SFX XW 0 om .
+SFX XW 0 omu .
+SFX XW 0 ome .
+SFX XW 0 im .
+SFX XW 0 i .
+SFX XW 0 ih .
+SFX XW 0 oj .
+SFX XW 0 e . 
+SFX XW 0 a .
+SFX XW 0 ima .
+
+SFX XX Y 6
+SFX XX ar ra ar
+SFX XX ar ru ar
+SFX XX ar rom ar
+SFX XX ar ri ar
+SFX XX 0 a ar
+SFX XX ar rima ar
+
+
+
+SFX CF Y 5
+SFX CF 0 og .
+SFX CF 0 oga .
+SFX CF 0 om .
+SFX CF 0 omu .
+SFX CF 0 ome .
+
+SFX CG Y 4
+SFX CG 0 eg .
+SFX CG 0 ega .
+SFX CG 0 em .
+SFX CG 0 emu .
+
+SFX CH Y 2
+SFX CH 0 e .
+SFX CH 0 ih .
+
+SFX CI Y 1
+SFX CI 0 0/92 .
+
+SFX CJ Y 2
+SFX CJ an n/93 an
+SFX CJ ar r/93 ar
+
+SFX CK Y 1
+SFX CK 0 0/93 .
+
+SFX CL Y 2
+SFX CL 0 0/92 i
+SFX CL i 0/93 i
+
+SFX CM Y 1
+SFX CM i 0/94 i
