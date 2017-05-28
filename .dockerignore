@@ -1,0 +1,12 @@
+# Git repository
+.git/
+
+# Source files
+src/
+
+# Scripts
+script/
+
+# Documentation
+*.md
+*.txt
