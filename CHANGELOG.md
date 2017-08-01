@@ -1,7 +1,9 @@
 # Changelog
 
 ## Release v2.1.0
+
 * Added support for applying word-specific patches to the dictionary during the update process.
+* Improved build script compatibility with Bash 4.x versions.
 * Travis CI now targets Elasticsearch 5.5 instead of 5.4.
 * Updated the [krunose/hr-hunspell](https://github.com/krunose/hr-hunspell/blob/master/izmjene-u-rje%C4%8Dniku.md) dictionary to version 2.1.1.
 
