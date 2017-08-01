@@ -24,7 +24,7 @@ print_debug "Cleared the build directory so we can start fresh"
 cp -t . ${DICT_DIR}/hr_HR.aff ${DICT_DIR}/hr_HR.dic ${SRC_DIR}/settings.yml
 print_debug "Copied required files"
 
-cp -t . ../CHANGELOG.md ../LICENSE.md ../README_hr_HR.txt ../README.md 
+cp -t . ../CHANGELOG.md ../LICENSE.md ../README_hr_HR.txt ../README.md
 print_debug "Copied documentation files"
 
 ICONV_DEF_NUM=$(grep -m 1 'ICONV' ${AFF_FILE} | awk '{print $NF}')
@@ -33,7 +33,7 @@ print_debug "Found existing number of ICONV definitions: %d" ${ICONV_DEF_NUM}
 ICONV_DEF_NUM_SRC=$(wc -l < ${SRC_DIR}/iconv.def)
 print_debug "Number of extra ICONV definitions from source: %d" ${ICONV_DEF_NUM_SRC}
 
-read -a ICONV_DEF_LOCS <<< $(grep -n 'ICONV' ${AFF_FILE} | cut -f1 -d: | sed -n '1p;$p')
+mapfile -t ICONV_DEF_LOCS < <(grep -n 'ICONV' ${AFF_FILE} | cut -f1 -d: | sed -n '1p;$p')
 print_debug "Located ICONV definition locations: start => %d, end => %d" ${ICONV_DEF_LOCS[0]} ${ICONV_DEF_LOCS[1]}
 
 MERGED_ICONV_LENGTH=$((${ICONV_DEF_NUM} + ${ICONV_DEF_NUM_SRC}))
