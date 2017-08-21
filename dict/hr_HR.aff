@@ -76,7 +76,7 @@ ICONV ŕ r
 
 
 # REP - .
-REP 161
+REP 167
 REP ^pocrtava podcrtava
 REP ^zdrastv zdravstv
 REP nućemo$ nut_ćemo
@@ -155,9 +155,11 @@ REP skm$ skom
 REP ioc$ ilac
 REP kno ktno
 REP isl i_sl
+REP nest nijet
 REP aoc$ alac
 REP ^mže$ može
 REP rni rnu
+REP rh rth
 REP ljnj nj
 REP mnj mlj
 REP ^bim$ bih
@@ -172,6 +174,7 @@ REP skuj šć
 REP xy ksi
 REP je ije
 REP ^biš$ bi
+REP and ad
 REP ije je
 REP om -om
 REP ći vši
@@ -185,6 +188,7 @@ REP is ijs
 REP un utn
 REP vši ći
 REP ko$ klo
+REP nk ngk
 REP ia ija
 REP lj nj
 REP iju$ e
@@ -224,8 +228,10 @@ REP a aa
 REP d dd
 REP e ee
 REP u -u
+REP n nn
 REP o oo
 REP u uu
+REP s ss
 REP i je
 REP zš š
 REP j dž
