@@ -76,12 +76,13 @@ ICONV ŕ r
 
 
 # REP - .
-REP 167
+REP 176
 REP ^pocrtava podcrtava
 REP ^zdrastv zdravstv
 REP nućemo$ nut_ćemo
 REP nućete$ nut_ćete
 REP ^riječo$ riječ_o
+REP ^usisač usisivač
 REP rejanac rejac
 REP ^prenat prednat
 REP šćemo$ st_ćemo
@@ -90,15 +91,18 @@ REP aćemo$ at_ćemo
 REP aćete$ at_ćete
 REP ićete$ it_ćete
 REP avaon ovaonic
+REP ^očenaš Očenaš
 REP ićemo$ it_ćemo
 REP ećete$ et_ćete
 REP nućeš$ nut_ćeš
 REP ećemo$ et_ćemo
 REP bčanci$ pčanki
+REP ^kosmos kozmos
 REP stravn stavn
 REP ^poravo$ pravo
 REP skinj stkinj
 REP reank rejk
+REP ampiš ampinš
 REP ^nezna ne_zna
 REP ^prdon pridon
 REP dreti$ derati
@@ -107,6 +111,7 @@ REP ićeš$ it_ćeš
 REP ^subst supst
 REP aćeš$ at_ćeš
 REP ^obama$ oboma
+REP ^lotus lotos
 REP nuću$ nut_ću
 REP nion nionic
 REP nuće$ nut_će
@@ -120,19 +125,23 @@ REP natn nantn
 REP dvgn dvagn
 REP skma$ skima
 REP ^bimo$ bismo
+REP ^kazin kasin
 REP ^htjeo$ htio
 REP ^menom$ mnom
 REP ^bite$ biste
 REP ^stim$ s_tim
 REP ^polu- polu
+REP ^moće$ može
 REP skme$ skome
 REP nara napra
 REP skmu$ skomu
+REP ^ljud$ ljut
 REP ^trab trav
 REP ^trab treb
 REP ^jel$ je_li
 REP bljiv biv
 REP najs naes
+REP ion ijun
 REP zir rizir
 REP aon aonic
 REP iće$ it_će
@@ -245,7 +254,7 @@ REP g h
 REP ć č
 REP č ć
 
-AF 403
+AF 405
 AF ZZ	# 1
 AF ZY	# 2
 AF ZX	# 3
@@ -649,6 +658,8 @@ AF TE	# 400
 AF TD	# 401
 AF THTGTETC	# 402
 AF TB	#403
+AF TC	#404
+AF TD	#405
 
 
 SFX XZ Y      21
@@ -3653,3 +3664,20 @@ SFX TB Y 3
 SFX TB 0 -a .
 SFX TB 0 -u .
 SFX TB 0 -om .
+
+SFX TC Y 8
+SFX TC an na an
+SFX TC an nu an
+SFX TC an ne an
+SFX TC an nom an
+SFX TC an novi an
+SFX TC an nova an
+SFX TC an novima an
+SFX TC an nove an
+
+SFX TD Y 5
+SFX TD as sa as
+SFX TD as su as
+SFX TD as som as
+SFX TD as si as
+SFX TD as sima as

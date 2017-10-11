@@ -1,4 +1,4 @@
-﻿53532
+﻿53524
 a
 a-mol/273
 A-reprezentacija/365
@@ -262,7 +262,7 @@ aeroterapija/365
 aerotermodinamika/378
 aerotransport/205
 aerotriangulacija/365
-aerotropzam/247
+aerotropizam/247
 aerotunel/238
 aeroturbina/365
 afabilni/347
@@ -11960,7 +11960,7 @@ iglica/360
 igličast/348
 igličav/340
 iglu/205
-iglun/205i
+iglun/205
 Ignacij/293
 ignorancija/365
 ignorant/223
@@ -14071,7 +14071,6 @@ izvijač/205
 izvijati/34
 izvijen/340
 izvijestiti/128
-izviješće/331
 izviještati/34
 izviješten/340
 izvikati/174
@@ -26629,7 +26628,7 @@ očekivati/47
 očeličen/341
 očeličiti/128
 očemeriti/128
-očenaš/205
+Očenaš/205
 očerupati/119
 očešati/184
 očešljan/340
@@ -26941,7 +26940,7 @@ odmarališni/353
 odmaralište/331
 odmarati/34
 odmarširati/105
-odmaščivač/238
+odmašćivač/238
 odmašćivati/47
 odmatati/34
 odmazda/360
@@ -29176,7 +29175,7 @@ ovakvi/354
 oval/205
 ovalni/347
 ovamo
-ovan
+ovan/404
 ovapnjenje/331
 ovariektomija/365
 ovarij/238
@@ -29232,10 +29231,7 @@ ovlaštenik/227
 ovlažen/341
 ovlažiti/128
 ovlaživati/47
-ovna
-ovnom
 ovnov/348
-ovnu
 ovnujski/353
 ovodobni/353
 ovogodišnji/353
@@ -29799,6 +29795,7 @@ partizan/229
 partner/223
 partnerstvo/331
 pas/265
+pas/405
 pasanac/256
 pasat/238
 pasati/85
@@ -30619,7 +30616,6 @@ pjenušac/247
 pjenušast/348
 pjenušati/31
 pjenušav/340
-pjenušavac/247
 pjenušaviji/355
 pjenjača/360
 pjenjenje/331
@@ -37479,7 +37475,6 @@ pržionica/360
 pržiti/52
 pržolica/360
 pržun/238
-psa
 psalam/247
 psalmist/205
 psaltir/205
@@ -37506,7 +37501,6 @@ pseudoslučajni/354
 pseudotruba/360
 pseudoznanost/392
 pseudoznanstven/340
-psi
 psić/205
 psiha/360
 psihički/353
@@ -37547,11 +37541,9 @@ psihotični/347
 psihotropni/347
 psihoza/360
 psikati/84
-psima
 psina/360
 psoglav/340
 psoglavac/256
-psom
 psorijaza/360
 psovač/223
 psovati/45
@@ -37559,7 +37551,6 @@ psovka/383
 pssst
 psst
 pst
-psu
 psujući/358
 Psunj/265
 pšenica/360
