@@ -1,5 +1,10 @@
 # Changelog
 
+## Release v2.1.2
+
+* Updated the [krunose/hr-hunspell](https://github.com/krunose/hr-hunspell/blob/master/izmjene-u-rje%C4%8Dniku.md) dictionary to version 2.1.2 (2017-10-11).
+* Removed support for adding dictionary specific patches.
+
 ## Release v2.1.1
 
 * Updated the [krunose/hr-hunspell](https://github.com/krunose/hr-hunspell/blob/master/izmjene-u-rje%C4%8Dniku.md) dictionary to version 2.1.1 (2017-08-16).
