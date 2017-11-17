@@ -6,9 +6,8 @@ services:
   - docker
 
 env:
-  - ES_VERSION=5.5
-  - ES_VERSION=2.4
-  - ES_VERSION=1.7
+  - ES_VERSION=6.0.0
+  - ES_VERSION=5.6.4
 
 before_install:
   # Install the latest version of Docker
@@ -25,7 +24,13 @@ install:
   # Build the Docker image that we're going to use for testing
   - docker build --build-arg ES_VERSION=${ES_VERSION} -t ${TRAVIS_REPO_SLUG} .
 
-before_script: docker run -d -p 127.0.0.1:9200:9200 ${TRAVIS_REPO_SLUG}
+before_script: >
+  docker run \
+    -d \
+    -p 127.0.0.1:9200:9200 \
+    -e "discovery.type=single-node" \
+    -e "xpack.security.enabled=false" \
+    ${TRAVIS_REPO_SLUG}
 
 script:
   # Wait for Elasticsearch to start accepting incoming connections

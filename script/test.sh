@@ -35,7 +35,7 @@ curl_dispatch "PUT" "http://127.0.0.1:9200/test_index" <<BODY
       "filter": {
         "hr_HR": {
           "type":     "hunspell",
-          "language": "hr_HR" 
+          "language": "hr_HR"
         }
       },
       "analyzer": {
@@ -57,7 +57,7 @@ sleep 5
 #
 echo -e "\e[32mTesting the Croatian analyzer...\e[39m"
 
-RESPONSE=$(curl_dispatch "GET" "http://127.0.0.1:9200/test_index/_analyze?analyzer=hr_HR&text=%C4%8Dokolade" <<BODY | tee /dev/tty
+RESPONSE=$(curl_dispatch "GET" "http://127.0.0.1:9200/test_index/_analyze" <<BODY | tee /dev/tty
 {
   "analyzer": "hr_HR",
   "text": "čokolade"
