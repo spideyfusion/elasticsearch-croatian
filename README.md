@@ -28,7 +28,7 @@ Building is currently only supported on Linux platforms. You'll need the followi
 
 ## Testing
 
-To run tests you'll need to have [Docker](https://www.docker.com/) (**17.05+**), [Python](https://www.python.org/) (**3.0+**) and the following tools: `bash`, `cat`, `cut`, `curl`, `head`, `tail`
+To run tests you'll need to have [Docker](https://www.docker.com/) (**17.09+**), [Python](https://www.python.org/) (**3.0+**) and the following tools: `bash`, `cat`, `cut`, `curl`, `head`, `tail`
 
 * [Build](#building) the dictionary.
 * Navigate to the root of the repository.
@@ -36,7 +36,7 @@ To run tests you'll need to have [Docker](https://www.docker.com/) (**17.05+**),
 * Start the Docker container with `docker run --rm -p 9200:9200 spideyfusion/elasticsearch-croatian`.
 * Run the tests by executing `script/test.sh`.
 
-> **NOTE:** You can specify which version of Elasticsearch you want to build using the `ES_VERSION` build argument (e.g. **5.4**).
+> **NOTE:** You can specify which version of Elasticsearch you want to build using the `ES_VERSION` build argument (e.g. **5.6.4**).
 
 ## Credits
 
