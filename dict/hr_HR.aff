@@ -76,7 +76,7 @@ ICONV ŕ r
 
 
 # REP - .
-REP 176
+REP 212
 REP ^pocrtava podcrtava
 REP ^zdrastv zdravstv
 REP nućemo$ nut_ćemo
@@ -97,6 +97,7 @@ REP ećete$ et_ćete
 REP nućeš$ nut_ćeš
 REP ećemo$ et_ćemo
 REP bčanci$ pčanki
+REP ^rasazn razazn
 REP ^kosmos kozmos
 REP stravn stavn
 REP ^poravo$ pravo
@@ -136,6 +137,7 @@ REP skme$ skome
 REP nara napra
 REP skmu$ skomu
 REP ^ljud$ ljut
+REP ^paje$ pa_je
 REP ^trab trav
 REP ^trab treb
 REP ^jel$ je_li
@@ -248,13 +250,48 @@ REP dž č
 REP ^ts c
 REP št š
 REP st s
-REP - _
 REP c k
 REP g h
 REP ć č
 REP č ć
+REP ^a A
+REP ^b B
+REP ^c C
+REP ^č Č
+REP ^ć Ć
+REP ^d D
+REP ^dž Dž
+REP ^đ Đ
+REP ^e E
+REP ^f F
+REP ^g G
+REP ^h H
+REP ^i I
+REP ^j J
+REP ^k K
+REP ^l L
+REP ^lj Lj
+REP ^m M
+REP ^n N
+REP ^nj Nj
+REP ^o O
+REP ^p P
+REP ^q Q
+REP ^r R
+REP ^s S
+REP ^š Š
+REP ^t T
+REP ^u U
+REP ^v V
+REP ^w W
+REP ^x X
+REP ^y Y
+REP ^z Z
+REP ^ž Ž
+REP - _
 
-AF 405
+
+AF 408
 AF ZZ	# 1
 AF ZY	# 2
 AF ZX	# 3
@@ -660,6 +697,9 @@ AF THTGTETC	# 402
 AF TB	#403
 AF TC	#404
 AF TD	#405
+AF TE	#406
+AF TF	#407
+AF TG	#408
 
 
 SFX XZ Y      21
@@ -3681,3 +3721,25 @@ SFX TD as su as
 SFX TD as som as
 SFX TD as si as
 SFX TD as sima as
+
+SFX TE Y 5
+SFX TE o a lo
+SFX TE o u lo
+SFX TE 0 m lo
+SFX TE lo ala lo
+SFX TE o ima lo
+
+SFX TF Y 3		# Križevci
+SFX TF i e vci
+SFX TF vci vaca vci	# Križevaca
+SFX TF 0 ma vci
+
+# imenica slijev: slijev, slijeva; sljevovi, sljevova
+SFX TG Y 7
+SFX TG 0 a .
+SFX TG 0 u .
+SFX TG 0 om .
+SFX TG ijev jevovi lijev
+SFX TG ijev jevova lijev
+SFX TG ijev jevove lijev
+SFX TG ijev jevovima lijev
