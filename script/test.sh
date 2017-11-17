@@ -8,7 +8,7 @@ function curl_dispatch {
 
     local httpCode=$(echo "${httpResponse}" | head -n 1 | cut -d$' ' -f2)
 
-    test "${httpCode}" -eq "200"
+    test ${httpCode} -eq 200
 }
 
 function cleanup {
