@@ -1,5 +1,12 @@
 # Changelog
 
+## Release v2.2.0
+
+* Added support for Elasticsearch 6.x versions. Any version older than 5.6 is no longer being tested against.
+* Updated the [krunose/hr-hunspell](https://github.com/krunose/hr-hunspell/blob/master/izmjene-u-rje%C4%8Dniku.md) dictionary to version 2.1.2 (2017-11-17).
+* Simplified the Docker installation steps inside Travis CI.
+* Improved test script compatibility with Bash 4.x versions.
+
 ## Release v2.1.2
 
 * Updated the [krunose/hr-hunspell](https://github.com/krunose/hr-hunspell/blob/master/izmjene-u-rje%C4%8Dniku.md) dictionary to version 2.1.2 (2017-10-11).
