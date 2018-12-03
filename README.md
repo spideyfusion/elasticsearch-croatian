@@ -23,7 +23,7 @@ Building is currently only supported on Linux platforms. You'll need the followi
 
 ## Installation
 
-* Extract the [downloaded](https://github.com/spideyfusion/elasticsearch-croatian/releases/latest) or [built](#building) ZIP archive contents to `./hunspell/hr_HR/` (relative to Elasticsearch's configuration directory, usually `/etc/elasticsearch/`).
+* Extract the [downloaded](https://github.com/spideyfusion/elasticsearch-croatian/releases/latest) or [built](#building) ZIP archive contents to `<path.conf>/hunspell/hr_HR/`. The configuration directory will be at a [different location](https://www.elastic.co/guide/en/elasticsearch/reference/current/settings.html#config-files-location) depending on how you installed Elasticsearch.
 * If Elasticsearch is already running, restart it.
 
 ## Testing
