@@ -1,19 +1,18 @@
-ARG ES_VERSION=6.0.0
+ARG ES_VERSION=6.5.1
 
-FROM docker.elastic.co/elasticsearch/elasticsearch:${ES_VERSION}
+FROM debian:stretch-slim AS build
 LABEL maintainer="Petar Obradović <spideyfusion@gmail.com>"
 
-# We need to escalate our privilegies in order to install additional stuff
-USER root
+RUN apt-get update && \
+    apt-get install -y zip unzip
 
-# For some reason, Elasticsearch images prior to version 6.x don't contain the "unzip" utility
-RUN yum --disableplugin=fastestmirror -y install unzip
+COPY . context/
 
-# We don't want to run Elasticsearch as a root user!
-USER elasticsearch
+RUN cd context && \
+    script/build.sh \
+    mkdir .build/dist && \
+    unzip -d .build/dist .build/package.zip
 
-COPY --chown=elasticsearch:elasticsearch .build/package.zip /tmp/package.zip
+FROM docker.elastic.co/elasticsearch/elasticsearch:${ES_VERSION}
 
-RUN mkdir -p /usr/share/elasticsearch/config/hunspell/hr_HR && \
-    unzip -d /usr/share/elasticsearch/config/hunspell/hr_HR /tmp/package.zip && \
-    rm /tmp/package.zip
+COPY --chown=elasticsearch:elasticsearch --from=build /context/.build/dist/ /usr/share/elasticsearch/config/hunspell/hr_HR/
