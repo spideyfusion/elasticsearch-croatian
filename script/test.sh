@@ -44,6 +44,10 @@ curl_dispatch "PUT" "http://127.0.0.1:9200/test_index" <<BODY
           "filter":   [ "lowercase", "hr_HR" ]
         }
       }
+    },
+    "index": {
+      "number_of_shards" : 1,
+      "number_of_replicas" : 0
     }
   }
 }
