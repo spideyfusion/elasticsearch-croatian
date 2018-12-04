@@ -32,7 +32,7 @@ To run tests you'll need to have [Docker](https://www.docker.com/) (**17.09+**),
 
 * [Build](#building) the dictionary.
 * Navigate to the root of the repository.
-* Build the Docker image with `docker build --build-arg ES_VERSION=latest -t spideyfusion/elasticsearch-croatian .`.
+* Build the Docker image with `docker build --build-arg ES_VERSION=6.5.1 -t spideyfusion/elasticsearch-croatian .`.
 * Start the Docker container with `docker run --rm -p 9200:9200 spideyfusion/elasticsearch-croatian`.
 * Run the tests by executing `script/test.sh`.
 
