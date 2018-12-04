@@ -23,7 +23,7 @@ Building is currently only supported on Linux platforms. You'll need the followi
 
 ## Installation
 
-* Extract the [downloaded](https://github.com/spideyfusion/elasticsearch-croatian/releases/latest) or [built](#building) ZIP archive contents to `./hunspell/hr_HR/` (relative to Elasticsearch's configuration directory, usually `/etc/elasticsearch/`).
+* Extract the [downloaded](https://github.com/spideyfusion/elasticsearch-croatian/releases/latest) or [built](#building) ZIP archive contents to `<path.conf>/hunspell/hr_HR/`. The configuration directory will be at a [different location](https://www.elastic.co/guide/en/elasticsearch/reference/current/settings.html#config-files-location) depending on how you installed Elasticsearch.
 * If Elasticsearch is already running, restart it.
 
 ## Testing
@@ -32,7 +32,7 @@ To run tests you'll need to have [Docker](https://www.docker.com/) (**17.09+**),
 
 * [Build](#building) the dictionary.
 * Navigate to the root of the repository.
-* Build the Docker image with `docker build --build-arg ES_VERSION=latest -t spideyfusion/elasticsearch-croatian .`.
+* Build the Docker image with `docker build --build-arg ES_VERSION=6.5.1 -t spideyfusion/elasticsearch-croatian .`.
 * Start the Docker container with `docker run --rm -p 9200:9200 spideyfusion/elasticsearch-croatian`.
 * Run the tests by executing `script/test.sh`.
 

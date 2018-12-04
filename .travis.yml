@@ -5,19 +5,21 @@ language: bash
 services:
   - docker
 
-env:
-  - ES_VERSION=6.0.0
-  - ES_VERSION=5.6.4
+addons:
+  apt:
+    packages:
+      - docker-ce
 
-before_install:
-  # Install the latest version of Docker
-  - sudo apt-get update -qq
-  - sudo apt-get install -y docker-ce
+env:
+  - ES_VERSION=6.5.1
+  - ES_VERSION=6.4.3
+  - ES_VERSION=6.3.2
+  - ES_VERSION=6.2.4
+  - ES_VERSION=6.1.4
+  - ES_VERSION=6.0.1
+  - ES_VERSION=5.6.13
 
 install:
-  # Build and package the dictionary before testing
-  - script/build.sh
-
   # Build the Docker image that we're going to use for testing
   - docker build --build-arg ES_VERSION=${ES_VERSION} -t ${TRAVIS_REPO_SLUG} .
 

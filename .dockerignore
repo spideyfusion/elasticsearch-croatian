@@ -1,12 +1,10 @@
-# Git repository
+# CI
+.travis.yml
+
+# Docker
+.dockerignore
+Dockerfile
+
+# Git
 .git/
-
-# Source files
-src/
-
-# Scripts
-script/
-
-# Documentation
-*.md
-*.txt
+.gitignore
