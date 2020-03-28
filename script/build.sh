@@ -50,7 +50,7 @@ print_debug "Removed all the comments from the final file"
 test $(grep 'ICONV' ${AFF_FILE} | wc -l) -eq $((${MERGED_ICONV_LENGTH} + 1))
 print_debug "Verified the final version of the file to have the current number of ICONV definitions"
 
-zip package $(ls)
+zip release $(ls)
 print_debug "Prepared the package for the final release"
 
 echo -e "\e[32mDone!\e[39m"

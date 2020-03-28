@@ -11,7 +11,7 @@ COPY . context/
 RUN cd context && \
     script/build.sh \
     mkdir .build/dist && \
-    unzip -d .build/dist .build/package.zip
+    unzip -d .build/dist .build/release.zip
 
 FROM docker.elastic.co/elasticsearch/elasticsearch:${ES_VERSION}
 
