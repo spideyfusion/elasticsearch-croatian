@@ -1,4 +1,4 @@
-ARG ES_VERSION=6.5.1
+ARG ES_VERSION=7.6.2
 
 FROM debian:stretch-slim AS build
 LABEL maintainer="Petar Obradović <spideyfusion@gmail.com>"

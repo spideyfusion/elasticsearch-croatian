@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/spideyfusion/elasticsearch-croatian.svg?branch=master)](https://travis-ci.org/spideyfusion/elasticsearch-croatian)
 
-This dictionary is meant to be used in combination with Elasticsearch's [Hunspell Stemmer](https://www.elastic.co/guide/en/elasticsearch/guide/current/hunspell.html) in order to provide support for searching of Croatian words inside documents. It's based on the [hr-hunspell](https://github.com/krunose/hr-hunspell) project.
+This dictionary is meant to be used in combination with Elasticsearch's [Hunspell Stemmer](https://www.elastic.co/guide/en/elasticsearch/guide/current/hunspell.html) in order to provide support for searching of Croatian words inside documents. It's based on the [hunspell-hr](https://github.com/krunose/hunspell-hr) project.
 
 ## Differences
 
@@ -32,11 +32,11 @@ To run tests you'll need to have [Docker](https://www.docker.com/) (**17.09+**),
 
 * [Build](#building) the dictionary.
 * Navigate to the root of the repository.
-* Build the Docker image with `docker build --build-arg ES_VERSION=6.5.1 -t spideyfusion/elasticsearch-croatian .`.
-* Start the Docker container with `docker run --rm -p 9200:9200 spideyfusion/elasticsearch-croatian`.
+* Build the Docker image with `docker build -t spideyfusion/elasticsearch-croatian .`.
+* Start the Docker container with `docker run --rm -e "discovery.type=single-node" -p 9200:9200 spideyfusion/elasticsearch-croatian`.
 * Run the tests by executing `script/test.sh`.
 
-> **NOTE:** You can specify which version of Elasticsearch you want to build using the `ES_VERSION` build argument (e.g. **5.6.4**).
+> **NOTE:** You can specify which version of Elasticsearch you want to build using the `ES_VERSION` [build argument](https://docs.docker.com/engine/reference/commandline/build/#set-build-time-variables---build-arg) (e.g. **5.6.4**).
 
 ## Credits
 
