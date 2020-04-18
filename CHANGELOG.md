@@ -1,5 +1,13 @@
 # Changelog
 
+## Release v2.4.0
+
+* Updated the [krunose/hunspell-hr](https://github.com/krunose/hunspell-hr/blob/master/izmjene-u-rje%C4%8Dniku.md) dictionary to version 2.1-201909xx.
+* Simplified the Travis CI matrix. Only the last three major versions of Elasticsearch will be tested against.
+* Fixed incorrect distribution package naming in build scripts.
+* Changed the default Elasticsearch development target to version 7.6.2.
+* Updated all GitHub dictionary repository references to point to the new name.
+
 ## Release v2.3.0
 
 * Updated the [krunose/hunspell-hr](https://github.com/krunose/hunspell-hr/blob/master/izmjene-u-rje%C4%8Dniku.md) dictionary to version 2.1.1 (2018-12-03).
