@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/spideyfusion/elasticsearch-croatian.svg?branch=master)](https://travis-ci.org/spideyfusion/elasticsearch-croatian)
 
-This dictionary is meant to be used in combination with Elasticsearch's [Hunspell Stemmer](https://www.elastic.co/guide/en/elasticsearch/guide/current/hunspell.html) in order to provide support for searching of Croatian words inside documents. It's based on the [hr-hunspell](https://github.com/krunose/hr-hunspell) project.
+This dictionary is meant to be used in combination with Elasticsearch's [Hunspell Stemmer](https://www.elastic.co/guide/en/elasticsearch/guide/current/hunspell.html) in order to provide support for searching of Croatian words inside documents. It's based on the [hunspell-hr](https://github.com/krunose/hunspell-hr) project.
 
 ## Differences
 
