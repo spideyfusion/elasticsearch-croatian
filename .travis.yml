@@ -11,13 +11,9 @@ addons:
       - docker-ce
 
 env:
-  - ES_VERSION=6.5.1
-  - ES_VERSION=6.4.3
-  - ES_VERSION=6.3.2
-  - ES_VERSION=6.2.4
-  - ES_VERSION=6.1.4
-  - ES_VERSION=6.0.1
-  - ES_VERSION=5.6.13
+  - ES_VERSION=7.6.2
+  - ES_VERSION=6.8.8
+  - ES_VERSION=5.6.16
 
 install:
   # Build the Docker image that we're going to use for testing
